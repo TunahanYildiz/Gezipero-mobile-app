@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/turKard"
+    android:layout_marginTop="18dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginRight="18dp"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageOtel1"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/textViewTurFiyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/card_border_fiyat"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Fiyat"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/card_border_tur_adi"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:textColor="#04189E"
+        android:textDirection="firstStrongRtl"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageOtel1"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="@+id/imageOtel1"
+        app:layout_constraintTop_toTopOf="@+id/imageOtel1"
+        app:layout_constraintVertical_bias="0.857">
+
+        <TextView
+
+            android:id="@+id/textViewTurAdi"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text="Otel Adı"
+            android:textColor="@color/darkblue"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_date"></ImageView>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:gravity="center"
+                android:text="Tarih Seçiniz"
+                android:textColor="@color/mexicanpink"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

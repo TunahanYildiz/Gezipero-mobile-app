@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/secondFragment">
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.gezipero.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.gezipero.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="com.example.gezipero.FourthFragment"
+        android:label="fragment_fourth"
+        tools:layout="@layout/fragment_fourth" />
+    <fragment
+        android:id="@+id/fourthProfil"
+        android:name="com.example.gezipero.fourthProfil"
+        android:label="fragment_fourth_profil"
+        tools:layout="@layout/fragment_fourth_profil" />
+    <fragment
+        android:id="@+id/fourthUyelik"
+        android:name="com.example.gezipero.fourthUyelik"
+        android:label="fragment_fourth_uyelik"
+        tools:layout="@layout/fragment_fourth_uyelik" />
+    <fragment
+        android:id="@+id/fourthGiris"
+        android:name="com.example.gezipero.FourthGiris"
+        android:label="fragment_fourth_giris"
+        tools:layout="@layout/fragment_fourth_giris" />
+    <fragment
+        android:id="@+id/fourthHesabim"
+        android:name="com.example.gezipero.FourthHesabim"
+        android:label="fragment_fourth_hesabim"
+        tools:layout="@layout/fragment_fourth_hesabim" />
+    <fragment
+        android:id="@+id/fourthUpdate"
+        android:name="com.example.gezipero.FourthUpdate"
+        android:label="fragment_fourth_update"
+        tools:layout="@layout/fragment_fourth_update"/>
+    <fragment
+        android:id="@+id/fourthFavorite"
+        android:name="com.example.gezipero.FourthFavorite"
+        android:label="fragment_fourth_favorite"
+        tools:layout="@layout/fragment_fourth_favorite" />
+    <fragment
+        android:id="@+id/fourthReservation"
+        android:name="com.example.gezipero.FourthReservation"
+        android:label="fragment_fourth_reservation"
+        tools:layout="@layout/fragment_fourth_reservation" />
+</navigation>

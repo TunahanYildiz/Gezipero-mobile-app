@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "129070653463",
+    "project_id": "geziprouser",
+    "storage_bucket": "geziprouser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129070653463:android:3f071209136c6e76c4fc52",
+        "android_client_info": {
+          "package_name": "com.example.gezipero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129070653463-s7h9vf5gc7591jt72sltl62sh2m5u6cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4iIN2hxGdmgjj2XVM1IXmHeRU5oGcbFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129070653463-s7h9vf5gc7591jt72sltl62sh2m5u6cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129070653463:android:9662d43790870df0c4fc52",
+        "android_client_info": {
+          "package_name": "com.example.gezipro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129070653463-s7h9vf5gc7591jt72sltl62sh2m5u6cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4iIN2hxGdmgjj2XVM1IXmHeRU5oGcbFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129070653463-s7h9vf5gc7591jt72sltl62sh2m5u6cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

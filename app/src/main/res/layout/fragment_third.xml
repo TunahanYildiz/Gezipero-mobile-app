@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdFragment">
+
+
+        <LinearLayout
+            android:id="@+id/lineerScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/search_area_tur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tur"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/logo_white"
+                    app:layout_constraintBottom_toTopOf="@+id/searchTurName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/searchTurName"
+                    android:layout_width="295dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="@color/white"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonTurAra"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/logo"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ic_search"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Nereyi keşfetmek istiyorsunuz?"
+                        android:textColor="@color/grey"
+                        android:textSize="10sp"
+                        app:layout_constraintStart_toEndOf="@+id/imageView4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/searchWordTur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="GAP Turları"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/buttonTurAra"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/roundstyle"
+                    android:text="Tur Ara"
+                    app:backgroundTint="@color/green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/searchTurName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnTurTakvimi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        >
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imageTakvim"
+                                android:layout_width="116dp"
+                                android:layout_height="150dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="Hepsi Tek Sayfada"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageTakvim"
+                                app:layout_constraintEnd_toStartOf="@+id/imageTakvim"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageTakvim" />
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:text="Tur Takvimi"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toTopOf="@+id/textView17"
+                                app:layout_constraintEnd_toStartOf="@+id/imageTakvim"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageTakvim" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnKonaklama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imageKonaklama"
+                                android:layout_width="116dp"
+                                android:layout_height="150dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                            <TextView
+                                android:id="@+id/textKonaklama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="Haftasonu ve Daha Uzun Turlar"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageKonaklama"
+                                app:layout_constraintEnd_toStartOf="@+id/imageKonaklama"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageKonaklama" />
+                            <TextView
+                                android:id="@+id/textKonaklama2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:text="Konaklamalı Turlar"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toTopOf="@+id/textKonaklama"
+                                app:layout_constraintEnd_toStartOf="@+id/imageKonaklama"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageKonaklama" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnGunubirlik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imageGunubirlik"
+                                android:layout_width="116dp"
+                                android:layout_height="150dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                            <TextView
+                                android:id="@+id/textGunubirlik"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="Şehirden Küçük Bir Kaçamak"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageGunubirlik"
+                                app:layout_constraintEnd_toStartOf="@+id/imageGunubirlik"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageGunubirlik" />
+                            <TextView
+                                android:id="@+id/textGunubirlik2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:text="Günübirlik Turlar"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toTopOf="@+id/textGunubirlik"
+                                app:layout_constraintEnd_toStartOf="@+id/imageGunubirlik"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageGunubirlik" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnKaradeniz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imageKaradeniz"
+                                android:layout_width="116dp"
+                                android:layout_height="150dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                            <TextView
+                                android:id="@+id/textkaradeniz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="Yeşilin En Yeşiline.."
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageKaradeniz"
+                                app:layout_constraintEnd_toStartOf="@+id/imageKaradeniz"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageKaradeniz" />
+                            <TextView
+                                android:id="@+id/textkaradeniz1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:text="Doğu Karadeniz Turları"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toTopOf="@+id/textkaradeniz"
+                                app:layout_constraintEnd_toStartOf="@+id/imageKaradeniz"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageKaradeniz" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnTermal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp">
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/imageTermal"
+                                android:layout_width="116dp"
+                                android:layout_height="150dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                            <TextView
+                                android:id="@+id/textTermal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="6dp"
+                                android:text="En Seçkin Şifalı Termal Tesisler"
+                                android:textColor="@color/white"
+                                android:textSize="8sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageTermal"
+                                app:layout_constraintEnd_toStartOf="@+id/imageTermal"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageTermal" />
+                            <TextView
+                                android:id="@+id/textTermal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:text="Termal Oteller"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toTopOf="@+id/textTermal"
+                                app:layout_constraintEnd_toStartOf="@+id/imageTermal"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageTermal" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/mexicanpink">
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:text="Kültür Turları"
+                        android:textColor="@color/darkblue"
+                        android:textSize="14sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Haftasonunuzu Gezipero ile planlayın! Size uygun turunuzu seçin ve hemen yerinizi ayırtın!"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        android:textStyle="normal"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTurAna"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/mexicanpink">
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="20dp"
+                        android:text="Günübirlik Turlarımız"
+                        android:textColor="@color/darkblue"
+                        android:textSize="14sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="Şehirden küçük bir kaçamak için günübirlik turlarımız sizi bekliyor."
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        android:textStyle="normal"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTurAnaG"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+
+</ScrollView>

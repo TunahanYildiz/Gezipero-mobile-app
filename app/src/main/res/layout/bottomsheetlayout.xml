@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/choosetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Tur Kategorisi Seçin"
+        android:textColor="@color/blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/layoutGunubirlik"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Günübirlik Turlar"
+            android:textColor="@color/lightblue"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutKonaklamali"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Konaklamalı Turlar"
+            android:textColor="@color/lightblue"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutGap"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GAP Turları"
+            android:textColor="@color/lightblue"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutBalkan"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balkan Turları"
+            android:textColor="@color/lightblue"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutAsya"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asya ve Uzak Doğu Turları"
+            android:textColor="@color/lightblue"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutGemi"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gemi Turları"
+            android:textColor="@color/lightblue"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
